@@ -1,7 +1,6 @@
 /* Navigation Bar */
 
 nav {
-  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -11,4 +10,14 @@ nav {
 
 #products-and-services > li {
   padding-left: 15px;
+}
+
+
+/* Content */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
 }
