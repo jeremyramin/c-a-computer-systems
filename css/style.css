@@ -1,0 +1,14 @@
+/* Navigation Bar */
+
+nav {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+#products-and-services a {
+  color: #03a9f4;
+}
+
+#products-and-services > li {
+  padding-left: 15px;
+}
