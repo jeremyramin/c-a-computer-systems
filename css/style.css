@@ -5,7 +5,7 @@ nav {
   font-weight: bold;
 }
 
-#products-and-services a {
+#products a, #services a {
   color: #03a9f4;
 }
 

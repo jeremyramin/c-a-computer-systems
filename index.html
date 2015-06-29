@@ -43,28 +43,67 @@
   </head>
   <body>
     
-    <nav class="light-blue" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="/index.html" class="brand-logo">CACS</a>
+    <nav role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">CACS</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#">About Us</a></li>
-          <li><a class='dropdown-button' href='#' data-beloworigin="true" data-activates='products-and-services' >Products and Services<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li>
+            <a class='dropdown-button' href='#' data-beloworigin="true" data-activates='products' >
+              Products<i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+          <li>
+            <a class='dropdown-button' href='#' data-beloworigin="true" data-activates='services' >
+              Services<i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
           <li><a href="#">Contact Us</a></li>
+        </ul>
+        
+        <ul id='services' class='dropdown-content'>
+          <li><a href="#!">Adagio</a></li>
+          <li><a href="#!">Trend Micro Antivirus</a></li>
+          <li><a href="#!">CISCO VOIP Systems</a></li>
+          <li><a href="#!">AXIS Security Camera Systems</a></li>
+        </ul>
+        
+        <ul id='products' class='dropdown-content'>
+          <li><a href="#!">Adagio</a></li>
+          <li><a href="#!">Trend Micro Antivirus</a></li>
+          <li><a href="#!">CISCO VOIP Systems</a></li>
+          <li><a href="#!">AXIS Security Camera Systems</a></li>
         </ul>
   
         <ul id="nav-mobile" class="side-nav">
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Products and Services</a></li>
+          <li class="no-padding">
+            <ul class="collapsible" data-collapsible="accordian">
+              <li>
+                <a class="collapsible-header waves-effect">Products<i class="material-icons">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="#!">Adagio</a></li>
+                    <li><a href="#!">Antivirus</a></li>
+                    <li><a href="#!">Firewalls</a></li>
+                    <li><a href="#!">Camera Systems</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="no-padding">
+            <ul class="collapsible" data-collapsible="accordian">
+              <li>
+                <a class="collapsible-header waves-effect">Services<i class="material-icons">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
           <li><a href="#">Contact Us</a></li>
-        </ul>
-        
-        <ul id='products-and-services' class='dropdown-content'>
-          <li><h5>Accounting</h5></li>
-          <li><a href="#!">Adagio</a></li>
-          <li class="divider"></li>
-          <li><h5>Security</h5>
-          <li><a href="#!">Antivirus</a></li>
-          <li><a href="#!">Firewalls</a></li>
-          <li><a href="#!">Camera Systems</a></li>
         </ul>
         
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -75,7 +114,7 @@
       
     </main>
     
-    <footer class="page-footer light-blue">
+    <footer class="page-footer">
       <div class="footer-copyright">
         <div class="container">
           © 
