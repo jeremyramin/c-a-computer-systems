@@ -31,7 +31,8 @@
     <title>C A Computer Systems</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 
@@ -49,12 +50,12 @@
           <li><a href="about/">About Us</a></li>
           <li>
             <a class='dropdown-button' href='#' data-beloworigin="true" data-activates='products' >
-              Products<i class="material-icons right">arrow_drop_down</i>
+              Products<i class="fa fa-caret-down fa-lg right"></i>
             </a>
           </li>
           <li>
             <a class='dropdown-button' href='#' data-beloworigin="true" data-activates='services' >
-              Services<i class="material-icons right">arrow_drop_down</i>
+              Services<i class="fa fa-caret-down fa-lg right"></i>
             </a>
           </li>
           <li><a href="#">Contact Us</a></li>
@@ -75,6 +76,7 @@
         </ul>
   
         <ul id="nav-mobile" class="side-nav">
+          <li><a href="about/">About Us</a></li>
           <li class="no-padding">
             <ul class="collapsible" data-collapsible="accordian">
               <li>
@@ -105,7 +107,7 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
         
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
       </div>
     </nav>
     
@@ -122,18 +124,9 @@
           </h3>
         </div>
       </div>
-      <div class="row center">
+      <div class="container">
+        <div class="row center">
         
-      </div>
-      <div id="founded-info" class="row">
-        <div class="card blue-grey lighten-3">
-          <div class="card-content">
-            <span class="card-title">Founded in 1987</span>
-            <p>Founded by Joseph Ebneyamin</p>
-          </div>
-          <div class="card-action">
-            <a href="about/">Learn More</a>
-          </div>
         </div>
       </div>
     </main>
@@ -147,9 +140,9 @@
         </div>
         <div class="col s12 l3 offset-l3">
           <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
+          <ul id="connect">
+            <li><i class="fa fa-location-arrow fa-fw white-text"></i><a class="white-text" href="#!"> Google Maps</a></li>
+            <li><i class="fa fa-yelp fa-fw white-text"></i><a class="white-text" href="#!"> Yelp</a></li>
             <li><a class="white-text" href="#!">Link 3</a></li>
             <li><a class="white-text" href="#!">Link 4</a></li>
           </ul>
