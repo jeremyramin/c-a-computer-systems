@@ -1,7 +1,11 @@
 /* Navigation Bar */
 
-nav {
+#nav-mobile {
   font-weight: bold;
+}
+
+.collapsible-body {
+  font-weight: normal;
 }
 
 #products a, #services a {
