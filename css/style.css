@@ -15,24 +15,18 @@
 
 /* Content */
 
-.icon-block {
-  padding: 0 15px;
-}
-
-.icon-block .material-icons {
-	font-size: inherit;
-}
 
 
 /* Footer */
 #connect {
   text-shadow: 1px 1px 2px black;
 }
-#connect li {
-  padding: 5px 0px;
+#connect > li {
+  font-size: 1.25em;
+  padding-bottom: 20px;
 }
-#contact-card {
-  max-width: 500px;
+#connect > :last-child {
+  padding-bottom: 0px !important;
 }
 #contact-info {
   padding: 0px 10px;

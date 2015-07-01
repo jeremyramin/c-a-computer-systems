@@ -31,7 +31,7 @@
     <title>C A Computer Systems</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen" />
     <link type="text/css" rel="stylesheet" href="../css/style.css" />
 
@@ -46,34 +46,30 @@
     <nav role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">CACS</a>
         <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="/about/index.html">About Us</a></li>
           <li>
-            <a class='dropdown-button' href='#' data-beloworigin="true" data-activates='products' >
-              Products<i class="material-icons right">arrow_drop_down</i>
+            <a class='dropdown-button' href='#' data-beloworigin="true" data-activates='services' >
+              Services<i class="fa fa-caret-down fa-lg right"></i>
             </a>
           </li>
           <li>
-            <a class='dropdown-button' href='#' data-beloworigin="true" data-activates='services' >
-              Services<i class="material-icons right">arrow_drop_down</i>
+            <a class='dropdown-button' href='#' data-beloworigin="true" data-activates='solutions' >
+              Solutions<i class="fa fa-caret-down fa-lg right"></i>
             </a>
           </li>
           <li><a href="#">Contact Us</a></li>
         </ul>
         
         <ul id='services' class='dropdown-content'>
-          <li><a href="#!">Adagio</a></li>
-          <li><a href="#!">Trend Micro Antivirus</a></li>
-          <li><a href="#!">CISCO VOIP Systems</a></li>
-          <li><a href="#!">AXIS Security Camera Systems</a></li>
+          <li><a href="#!">TBD</a></li>
         </ul>
         
-        <ul id='products' class='dropdown-content'>
-          <li><a href="#!">Adagio</a></li>
-          <li><a href="#!">Trend Micro Antivirus</a></li>
-          <li><a href="#!">CISCO VOIP Systems</a></li>
-          <li><a href="#!">AXIS Security Camera Systems</a></li>
+        <ul id='solutions' class='dropdown-content light-blue-text'>
+          <li><a href="#!">TBD</a></li>
         </ul>
   
         <ul id="nav-mobile" class="side-nav">
+          <li class="active"><a href="/about/index.html">About Us</a></li>
           <li class="no-padding">
             <ul class="collapsible" data-collapsible="accordian">
               <li>
@@ -104,7 +100,7 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
         
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
       </div>
     </nav>
     
@@ -115,23 +111,23 @@
           <div class="row center">
             <div class="col s12 m4">
               <div class="icon-block">
-                <h1 class="center light-blue-text"><i class="material-icons">&#xE87C;</i></h1>
+                <h2 class="center light-blue-text"><i class="fa fa-fw">&#xf19d;</i></h2>
                 <h5 class="center">Engineers</h5>
-                <p>Masters of Computer Engineering<br>Masters of Computer Science</p>
+                <p>Specialized in computer hardware and software</p>
               </div>
             </div>
             <div class="col s12 m4">
               <div class="icon-block">
-                <h1 class="center light-blue-text"><i class="material-icons">&#xE869;</i></h1>
+                <h2 class="center light-blue-text"><i class="fa fa-fw">&#xf0ad;</i></h2>
                 <h5 class="center">Building</h5>
-                <p>Custom made PCs and networks for<br>small to medium sized businesses</p>
+                <p>PCs and network infrastructures for businesses</p>
               </div>
             </div>
             <div class="col s12 m4">
               <div class="icon-block">
-                <h1 class="center light-blue-text"><i class="material-icons">&#xE86F;</i></h1>
+                <h2 class="center light-blue-text"><i class="fa fa-fw">&#xf121;</i></h2>
                 <h5 class="center">Developing</h5>
-                <p>Custom applications to match<br>the needs of the customer</p>
+                <p>Applications tailored to the needs of the client</p>
               </div>
             </div>
           </div>
@@ -140,6 +136,33 @@
     </main>
     
     <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l4">
+            <h5 class="white-text">Dedicated to Service</h5>
+            <p class="white-text">We do not benefit by recommending any particular course of action to our customers, so we only provide economically sound solutions that are specifically designed for your organization.</p>
+          </div>
+          <div class="col s12 m3 l3 offset-l1">
+            <h5 class="white-text">Connect</h5>
+            <ul id="connect">
+              <li><a class="green-text text-lighten-2" href="#!"><i class="fa fa-fw">&#xf124;</i> Google Maps</a></li>
+              <li><a class="red-text text-lighten-1" href="#!"><i class="fa fa-fw">&#xf1e9;</i> Yelp</a></li>
+              <li><a class="blue-text text-lighten-2" href="#!"><i class="fa fa-fw">&#xf0e1;</i> LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="col s12 m6 offset-m1 l4">
+            <h5 class="white-text">Contact</h5>
+            <div id="contact-card" class="card hoverable">
+              <ul id="contact-info" class="fa-ul">
+                <li><i class="fa fa-user fa-li"></i>C A Computer Systems</li>
+                <li><i class="fa fa-phone fa-li"></i><a href="tel:310-477-0013">(310) 477-0013</a></li>
+                <li><i class="fa fa-envelope-o fa-li"></i><a href="mailto:info@cacomputersystems.com" class="truncate">info@cacomputersystems.com</a></li>
+              </ul>
+              <p class="center-align"><a class="tooltipped" href="contact.vcf" data-position="bottom" data-delay="50" data-tooltip="Save"><i class="fa fa-download"></i></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="footer-copyright">
         <div class="container center">
           © 
@@ -154,7 +177,7 @@
 
     <!-- Materialize core JavaScript -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/init.js"></script>
   </body>
 </html>
