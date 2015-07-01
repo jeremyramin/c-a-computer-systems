@@ -8,6 +8,8 @@
     $('.tooltipped').tooltip({delay: 50});
 
     $('.slider').slider({full_width: true});
+    
+    $('.collapsible').collapsible();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
