@@ -1,19 +1,59 @@
 /* Font */
 
-body {
+html {
   font-size: 1em;
 }
 
+/* Large Devices */
+h1 {font-size: 3.157em;}
+
+h2 {font-size: 2.369em;}
+
+h3 {font-size: 1.777em;}
+
+h4 {font-size: 1.333em;}
+
+small, .font_small {font-size: 0.75em;}
+
+.caption {
+  font-size: 1.2em;
+}
+
+/* Medium Devices */
 @media only screen and (max-width: 992px) {
-  .header {
-    font-size: 2em;
+  h1 {font-size: 2.441em;}
+
+  h2 {font-size: 1.953em;}
+
+  h3 {font-size: 1.563em;}
+
+  h4 {font-size: 1.25em;}
+
+  small, .font_small {font-size: 0.8em;}
+  
+  .caption {
+    font-size: 1.1em;
+  }
+}
+/* Small Devices */
+@media only screen and (max-width: 600px) {
+  h1 {font-size: 2.074em;}
+
+  h2 {font-size: 1.728em;}
+  
+  h3 {font-size: 1.44em;}
+  
+  h4 {font-size: 1.2em;}
+  
+  small, .font_small {font-size: 0.833em;}
+  
+  .caption {
+    font-size: 1em;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .header {
-    font-size: 1.5em;
-  }
+.icon-block i {
+  font-size: 1.5em;
 }
 
 /* Navigation Bar */
