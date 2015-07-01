@@ -8,12 +8,8 @@
   font-weight: normal;
 }
 
-#products a, #services a {
+.dropdown-content li a {
   color: #03a9f4;
-}
-
-#products-and-services > li {
-  padding-left: 15px;
 }
 
 
@@ -29,4 +25,12 @@
 
 
 /* Footer */
-
+#connect {
+  text-shadow: 1px 1px 2px black;
+}
+#contact-card {
+  max-width: 500px;
+}
+#contact-info {
+  padding: 0px 10px;
+}
