@@ -56,6 +56,14 @@ small, .font_small {font-size: 0.75em;}
   font-size: 1.5em;
 }
 
+.header {
+  font-weight: bold;
+}
+
+#indexBanner {
+  padding-bottom: 0px;
+}
+
 /* Navigation Bar */
 
 ul.side-nav {
