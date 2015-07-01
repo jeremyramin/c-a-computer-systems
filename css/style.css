@@ -1,3 +1,21 @@
+/* Font */
+
+body {
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 1.5em;
+  }
+}
+
 /* Navigation Bar */
 
 ul.side-nav {
@@ -7,7 +25,7 @@ ul.side-nav li {
   line-height: 50px;
 }
 ul.side-nav li:hover, ul.side-nav li.active {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 ul.side-nav li a {
   font-size: 13px;
@@ -25,6 +43,16 @@ ul.side-nav:hover {
 }
 .dropdown-content li a {
   color: #03a9f4;
+}
+ul.side-nav a i {
+    font-size: 1.3em;
+    width: 2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-right: 1rem; 
 }
 
 
