@@ -1,17 +1,17 @@
-/* Font */
+/* Base */
 
 html {
   font-size: 1em;
 }
 
 /* Large Devices */
-h1 {font-size: 3.157em;}
+h1 {font-size: 3.157em; margin-bottom: -0.05em;}
 
-h2 {font-size: 2.369em;}
+h2 {font-size: 2.369em; margin-bottom: -0.05em;}
 
-h3 {font-size: 1.777em;}
+h3 {font-size: 1.777em; margin-bottom: -0.05em;}
 
-h4 {font-size: 1.333em;}
+h4 {font-size: 1.333em; margin-bottom: -0.05em;}
 
 small, .font_small {font-size: 0.75em;}
 
@@ -52,17 +52,21 @@ small, .font_small {font-size: 0.75em;}
   }
 }
 
-.icon-block i {
-  font-size: 1.5em;
-}
 
 .header {
   font-weight: bold;
 }
 
-#indexBanner {
-  padding-bottom: 0px;
+/* Icon Block */
+.icon-block-wrapper {
+  position: relative;
+  top: -20px;
 }
+.icon-block i {
+  font-size: 1.5em;
+}
+
+
 
 /* Navigation Bar */
 
