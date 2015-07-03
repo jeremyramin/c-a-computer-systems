@@ -30,7 +30,7 @@ small, .font_small {font-size: 0.75em;}
   h4 {font-size: 1.25em;}
 
   small, .font_small {font-size: 0.8em;}
-  
+
   .caption {
     font-size: 1.1em;
   }
@@ -40,13 +40,13 @@ small, .font_small {font-size: 0.75em;}
   h1 {font-size: 2.074em;}
 
   h2 {font-size: 1.728em;}
-  
+
   h3 {font-size: 1.44em;}
-  
+
   h4 {font-size: 1.2em;}
-  
+
   small, .font_small {font-size: 0.833em;}
-  
+
   .caption {
     font-size: 1em;
   }
@@ -76,8 +76,22 @@ ul.side-nav {
 ul.side-nav li {
   line-height: 50px;
 }
-ul.side-nav li:hover, ul.side-nav li.active {
+ul.side-nav li:hover, ul.side-nav li.active, {
   background-color: rgba(0, 0, 0, 0.1);
+}
+ul.side-nav li.logo {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  background-color: #03a9f4;
+}
+ul.side-nav li.logo:hover {
+    background-color: ;
+}
+#logo-container {
+  height: 57px;
+  margin-bottom: 40px;
 }
 ul.side-nav li a {
   font-size: 13px;
@@ -93,9 +107,6 @@ ul.side-nav:hover {
 .bold > a {
   font-weight: bold;
 }
-.dropdown-content li a {
-  color: #03a9f4;
-}
 ul.side-nav a i {
     font-size: 1.3em;
     width: 2rem;
@@ -104,7 +115,27 @@ ul.side-nav a i {
     display: block;
     float: left;
     text-align: center;
-    margin-right: 1rem; 
+    margin-right: 1rem;
+}
+.dropdown-content li a {
+  color: #03a9f4;
+}
+
+#top-logo {
+    max-height: 80%;
+    position: relative;
+    top: .4rem;
+}
+.fixed-height {
+    height: 100%;
+    width: auto;
+}
+.fixed-width {
+    width: 100%;
+    height: auto;
+}
+#nav-mobile-logo {
+    max-width: 100%;
 }
 
 
