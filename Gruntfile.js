@@ -280,6 +280,17 @@ module.exports = function (grunt) {
         ]
       }
     },
+    cdn: {
+      options: {
+        cdn: '/cacs/',
+        flatten: true
+      },
+      dist: {
+        cwd: '<%= yeoman.dist %>',
+        dest: '<%= yeoman.dist %>',
+        src: ['**/*.html', '**/*.css']
+      }
+    },
     // https://github.com/robwierzbowski/generator-jekyllrb/issues/106
     // scsslint: {
     //   // See https://www.npmjs.org/package/grunt-scss-lint for options.
