@@ -15,6 +15,8 @@
 
     $('.scrollspy').scrollSpy();
 
+    $('.toc-wrapper').pushpin({ top: $('.toc-wrapper').offset().top });
+
     $('.tooltipped').tooltip({delay: 50});
 
     $('.slider').slider({full_width: true});

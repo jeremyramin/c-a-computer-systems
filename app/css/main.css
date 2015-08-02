@@ -19,6 +19,10 @@ header, main, footer {
   header, main, footer {
     padding-left: 0;
   }
+
+  .nav-wrapper {
+    text-align: center;
+  }
 }
 
 .larger-text {
@@ -29,13 +33,13 @@ header, main, footer {
   font-size: 3rem;
 }
 
+.caption {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 
 /* Icon Block */
 
-.icon-block-wrapper {
-  position: relative;
-  top: -20px;
-}
 .icon-block i {
   font-size: 1.5em;
 }

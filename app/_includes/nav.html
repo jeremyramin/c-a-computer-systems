@@ -1,9 +1,14 @@
 <header>
   <nav class="top-nav">
     <div class="container">
-      <div class="nav-wrapper center">
-        <a href="#" data-activates="nav-mobile" class="button-collapse hide-on-large-only"><i class="fa">&#xf0c9;</i></a>
-        <a class="page-title">{{ page.title }}</a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse hide-on-large-only"><i class="fa">&#xf0c9;</i></a>
+      <div class="nav-wrapper">
+        {% if page.short-title %}
+          <a class="page-title hide-on-small-only">{{ page.title }}</a>
+          <a class="page-title hide-on-med-and-up">{{ page.short-title }}</a>
+        {% else %}
+          <a class="page-title">{{ page.title }}</a>
+        {% endif %}
       </div>
     </div>
   </nav>
