@@ -306,6 +306,16 @@ module.exports = function (grunt) {
       dist: [
         'copy:dist'
       ]
+    },
+    replace: {
+      dist: {
+        src: ['<%= yeoman.dist %>/**/*.html'],
+        overwrite: true,                 // overwrite matched source files
+        replacements: [{
+          from: 'localhost:3000',
+          to: 'jeremyramin.github.io'
+        }]
+      }
     }
   });
 
@@ -365,6 +375,7 @@ module.exports = function (grunt) {
     'check',
     'test',
     'build',
+    'replace:dist',
     'buildcontrol'
     ]);
 

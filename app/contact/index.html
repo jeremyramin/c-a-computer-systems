@@ -1,43 +1,44 @@
 ---
 layout: default
+directory: /contact
 ---
 <div class="section">
   <div class="container">
-    <h5>Please complete the fields below and we will respond to your inquiry within 48 hours.</h5>
+    <h5 class="center blue-text text-darken-3">Please complete the fields below and we will respond to your inquiry within 48 hours.</h5>
     <form method="post" action="http://sitesupport.websitetonight.com/formmailer.aspx?projectid=1252044&amp;websiteid=13227654&amp;emailid=" name="Contact Form" id="wstForm_Contact">
       <div class="row">
         <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate" required="" pattern="[a-zA-z]+">
+          <input name="fname" type="text" class="validate" required pattern="[a-zA-z]+" autocomplete="given-name">
           <label for="first_name">* First Name</label>
         </div>
 
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate" required="" pattern="[a-zA-z]+">
+          <input name="lname" type="text" class="validate" required pattern="[a-zA-z]+" autocomplete="family-name">
           <label for="last_name">* Last Name</label>
         </div>
 
         <div class="input-field col s12">
-          <input id="address1" type="text" class="validate">
+          <input name="address" type="text" class="validate" autocomplete="address-line1">
           <label for="address1">Address Street 1</label>
         </div>
 
         <div class="input-field col s12">
-          <input id="address2" type="text" class="validate">
+          <input name="address" type="text" class="validate" autocomplete="address-line2">
           <label for="address2">Address Street 2</label>
         </div>
 
         <div class="input-field col s4">
-          <input id="city" type="text" class="validate">
+          <input name="city" type="text" class="validate" autocomplete="address-level2">
           <label for="city">City</label>
         </div>
 
         <div class="input-field col s4">
-          <input id="zipcode" type="text" class="validate" pattern="\d{5}">
+          <input name="postal" type="text" class="validate" pattern="\d{5}" autocomplete="postal-code">
           <label for="zipcode">Zip Code</label>
         </div>
 
         <div class="input-field col s4">
-          <select>
+          <select name="state" autocomplete="address-level1">
             <option selected="selected" value="AL">AL</option>
             <option value="AK">AK</option>
             <option value="AZ">AZ</option>
@@ -94,18 +95,22 @@ layout: default
         </div>
 
         <div class="input-field col s6">
-          <input id="phone" type="tel" class="validate">
-          <label for="phone" data-error="Invalid" data-success="">Phone Number</label>
+          <input name="phone" type="tel" class="validate" autocomplete="tel">
+          <label for="phone" data-error="Invalid" data-success="Valid">Phone Number</label>
         </div>
 
         <div class="input-field col s6">
-          <input id="email" type="email" class="validate" required="">
-          <label for="email" data-error="Invalid" data-success="" pattern="/^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i">* Email</label>
+          <input name="email" type="email" class="validate" required="" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="email">
+          <label for="email" data-error="Invalid" data-success="Valid">* Email</label>
         </div>
       </div>
       <div class="row center">
-        <input type="submit" onclick="return wstxSubmitForm(this);" value="Submit" id="wstForm_Contact_Submit">
-        <input type="reset" value="Reset" id="wstForm_Contact_Reset">
+        <button class="btn btn-large waves-effect waves-light larger-text" type="submit" name="action" onclick="return wstxSubmitForm(this);" value="Submit" id="wstForm_Contact_Submit">
+          Submit<i class="fa fa-paper-plane right"></i>
+        </button>
+        <button class="btn btn-large waves-effect waves-light larger-text" type="reset" value="Reset" id="wstForm_Contact_Reset">
+          Reset<i class="fa fa-trash right"></i>
+        </button>
       </div>
     </form>
   </div>
