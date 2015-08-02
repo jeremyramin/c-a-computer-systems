@@ -311,8 +311,8 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.dist %>/**/*.html'],
         overwrite: true,                 // overwrite matched source files
         replacements: [{
-          from: /"(\/.*)"/ig,
-          to: '"\/cacs$1"'
+          from: /"(\/\S*)"/ig,
+          to: '"/cacs$1"'
         }]
       }
     }
