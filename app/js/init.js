@@ -10,9 +10,10 @@
       hover: true, // Activate on hover
       gutter: 0, // Spacing from edge
       belowOrigin: true // Displays dropdown below the button
-    }
-  );
+      }
+    );
 
+    $('.scrollspy').scrollSpy();
 
     $('.tooltipped').tooltip({delay: 50});
 

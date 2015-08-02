@@ -5050,7 +5050,7 @@ span.badge {
     width: 85%; } }
 @media only screen and (min-width: 993px) {
   .container {
-    width: 70%; } }
+    width: 85%; } }
 .container .row {
   margin-left: -0.75rem;
   margin-right: -0.75rem; }
@@ -5370,11 +5370,11 @@ nav {
 
 @media only screen and (min-width: 601px) {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 64px;
-    line-height: 64px; }
+    height: 100px;
+    line-height: 100px; }
 
   .navbar-fixed {
-    height: 64px; } }
+    height: 100px; } }
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
@@ -7132,11 +7132,11 @@ select {
   .table-of-contents a:hover {
     color: #a8a8a8;
     padding-left: 19px;
-    border-left: 1px solid #ea4a4f; }
+    border-left: 1px solid #47c4fd; }
   .table-of-contents a.active {
     font-weight: 500;
     padding-left: 18px;
-    border-left: 2px solid #ea4a4f; }
+    border-left: 2px solid #47c4fd; }
 
 .side-nav {
   position: fixed;
@@ -7162,13 +7162,13 @@ select {
     float: none;
     padding: 0 15px; }
     .side-nav li:hover, .side-nav li.active {
-      background-color: #ddd; }
+      background-color: #eee; }
   .side-nav a {
     color: #444;
     display: block;
     font-size: 1rem;
-    height: 64px;
-    line-height: 64px;
+    height: 50px;
+    line-height: 50px;
     padding: 0 15px; }
 
 .drag-target {

@@ -1,10 +1,7 @@
 /* Base */
 
-html {
-  font-size: 1em;
-}
-
 body {
+  font-size: 1rem;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -14,64 +11,27 @@ main {
   flex: 1 0 auto;
 }
 
-/* Large Devices */
-h1 {font-size: 3.157em; margin-bottom: -0.05em;}
+header, main, footer {
+  padding-left: 240px;
+}
 
-h2 {font-size: 2.369em; margin-bottom: -0.05em;}
-
-h3 {font-size: 1.777em; margin-bottom: -0.05em;}
-
-h4 {font-size: 1.333em; margin-bottom: -0.05em;}
-
-small, .font_small {font-size: 0.75em;}
-
-.caption {
-  font-size: 1.2em;
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
 }
 
 .larger-text {
   font-size: 150%;
 }
 
-/* Medium Devices */
-@media only screen and (max-width: 992px) {
-  h1 {font-size: 2.441em;}
-
-  h2 {font-size: 1.953em;}
-
-  h3 {font-size: 1.563em;}
-
-  h4 {font-size: 1.25em;}
-
-  small, .font_small {font-size: 0.8em;}
-
-  .caption {
-    font-size: 1.1em;
-  }
-}
-/* Small Devices */
-@media only screen and (max-width: 600px) {
-  h1 {font-size: 2.074em;}
-
-  h2 {font-size: 1.728em;}
-
-  h3 {font-size: 1.44em;}
-
-  h4 {font-size: 1.2em;}
-
-  small, .font_small {font-size: 0.833em;}
-
-  .caption {
-    font-size: 1em;
-  }
+.page-title {
+  font-size: 3rem;
 }
 
-
-.header {
-  font-weight: bold;
-}
 
 /* Icon Block */
+
 .icon-block-wrapper {
   position: relative;
   top: -20px;
@@ -81,40 +41,34 @@ small, .font_small {font-size: 0.75em;}
 }
 
 
-
 /* Navigation Bar */
 
 ul.side-nav {
   overflow: hidden;
 }
-ul.side-nav li {
-  line-height: 50px;
-}
-ul.side-nav li:hover, ul.side-nav li.active {
-  background-color: #eee;
-}
+
 ul.side-nav li.logo {
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
   border-bottom: 1px solid black;
   background-color: #03a9f4;
+  height: 100px;
+  margin-bottom: 5px;
 }
 
-#logo-container {
-  height: 57px;
-  margin-bottom: 40px;
+ul.side-nav li.logo img {
+  width: 100%;
+  max-width: inherit;
 }
-ul.side-nav li a {
-  font-size: 13px;
+
+.collapsible {
   line-height: 50px;
-  height: 50px;
 }
+
 ul.side-nav ul.collapsible-accordion {
   background-color: #FFF;
 }
 ul.side-nav:hover {
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .bold > a {
   font-weight: bold;
@@ -129,27 +83,6 @@ ul.side-nav a i {
     text-align: center;
     margin-right: 1rem;
 }
-.dropdown-content li a {
-  color: #03a9f4;
-}
-
-#top-logo {
-    max-height: 80%;
-    position: relative;
-    top: .4rem;
-}
-.fixed-height {
-    height: 100%;
-    width: auto;
-}
-.fixed-width {
-    width: 100%;
-    height: auto;
-}
-#nav-mobile-logo {
-    max-width: 100%;
-}
-
 
 /* Footer */
 

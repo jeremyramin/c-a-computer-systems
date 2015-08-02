@@ -1,46 +1,15 @@
 <header>
   <nav class="top-nav">
-    <div class="nav-wrapper container">
-
-      <a href="/" class="brand-logo fixed-height"><img id="top-logo" src="/img/logo.png" /></a>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa">&#xf0c9;</i></a>
-
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a class='dropdown-button' href='#' data-activates='adagio'>
-            Adagio<i class="fa fa-caret-down right"></i>
-          </a>
-        </li>
-        <li>
-          <a class='dropdown-button' href='#' data-activates='services'>
-            Services<i class="fa fa-caret-down right"></i>
-          </a>
-        </li>
-        <li>
-          <a class='dropdown-button' href='#' data-activates='solutions'>
-            Solutions<i class="fa fa-caret-down right"></i>
-          </a>
-        </li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/contact">Contact Us</a></li>
-      </ul>
-
-      <ul id='adagio' class='dropdown-content'>
-        <li><a href="#">TBD</a></li>
-      </ul>
-
-      <ul id='services' class='dropdown-content'>
-        <li><a href="#">TBD</a></li>
-      </ul>
-
-      <ul id='solutions' class='dropdown-content'>
-        <li><a href="#">TBD</a></li>
-      </ul>
+    <div class="container">
+      <div class="nav-wrapper center">
+        <a href="#" data-activates="nav-mobile" class="button-collapse hide-on-large-only"><i class="fa">&#xf0c9;</i></a>
+        <a class="page-title">{{ page.title }}</a>
+      </div>
     </div>
   </nav>
 
-  <ul id="nav-mobile" class="side-nav">
-    <li class="fixed-width logo"><a id="logo-container" href="/"><img id="nav-mobile-logo" src="/img/logo.png" /></a></li>
+  <ul id="nav-mobile" class="side-nav fixed">
+    <li class="logo"><a class="logo-container" href="/"><img src="/img/logo.png" /></a></li>
 
     <li class="bold"><a href="/" class="waves-effect waves-orange"><i class="fa fa-fw">&#xf015;</i>Home</a></li>
 
@@ -52,7 +21,7 @@
           <a class="collapsible-header waves-effect waves-orange"><i class="fa fa-fw">&#xf07a;</i>Products</a>
           <div class="collapsible-body">
             <ul>
-              <li><a href="#">TBD</a></li>
+              <li><a href="/test">Test</a></li>
             </ul>
           </div>
         </li>
