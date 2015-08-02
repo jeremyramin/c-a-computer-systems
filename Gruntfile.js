@@ -311,8 +311,8 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.dist %>/**/*.html'],
         overwrite: true,                 // overwrite matched source files
         replacements: [{
-          from: 'localhost:3000',
-          to: 'jeremyramin.github.io/cacs'
+          from: /"(\/.*)"/ig,
+          to: '"\/cacs$1"'
         }]
       }
     }
@@ -367,6 +367,7 @@ module.exports = function (grunt) {
     'svgmin',
     'filerev',
     'usemin',
+    'replace:dist',
     'htmlmin'
     ]);
 
