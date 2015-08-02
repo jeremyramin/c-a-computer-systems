@@ -353,29 +353,49 @@ module.exports = function (grunt) {
     // 'scsslint'
   ]);
 
-  grunt.registerTask('build', [
-    'clean',
-    // Jekyll cleans files from the target directory, so must run first
-    'jekyll:dist',
-    'concurrent:dist',
-    'useminPrepare',
-    'concat',
-    'autoprefixer:dist',
-    'cssmin',
-    'uglify',
-    'imagemin',
-    'svgmin',
-    'filerev',
-    'usemin',
-    'replace:dist',
-    'htmlmin'
-    ]);
+  grunt.registerTask('build', function (target) {
+    if (target === 'github') {
+      return grunt.task.run([
+        'clean',
+        // Jekyll cleans files from the target directory, so must run first
+        'jekyll:dist',
+        'concurrent:dist',
+        'useminPrepare',
+        'concat',
+        'autoprefixer:dist',
+        'cssmin',
+        'uglify',
+        'imagemin',
+        'svgmin',
+        'filerev',
+        'usemin',
+        'replace:dist',
+        'htmlmin'
+      ]);
+    } else {
+      grunt.task.run([
+        'clean',
+        // Jekyll cleans files from the target directory, so must run first
+        'jekyll:dist',
+        'concurrent:dist',
+        'useminPrepare',
+        'concat',
+        'autoprefixer:dist',
+        'cssmin',
+        'uglify',
+        'imagemin',
+        'svgmin',
+        'filerev',
+        'usemin',
+        'htmlmin'
+      ]);
+    }
+  });
 
   grunt.registerTask('deploy', [
     'check',
     'test',
-    'build',
-    'replace:dist',
+    'build:github',
     'buildcontrol'
     ]);
 
