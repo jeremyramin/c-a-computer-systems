@@ -6197,25 +6197,25 @@ button:focus {
   background-color: #176fd2; }
 
 label {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #9e9e9e; }
 
 /***************************
    Text Inputs + Textarea
 ****************************/
 ::-webkit-input-placeholder {
-  color: #d1d1d1; }
+  color: #b8b8b8; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #d1d1d1; }
+  color: #b8b8b8; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #d1d1d1; }
+  color: #b8b8b8; }
 
 :-ms-input-placeholder {
-  color: #d1d1d1; }
+  color: #b8b8b8; }
 
 input[type=text],
 input[type=password],
@@ -6441,7 +6441,7 @@ textarea.materialize-textarea {
     -ms-transition: 0.2s ease-out;
     transition: 0.2s ease-out; }
   .input-field label.active {
-    font-size: 0.8rem;
+    font-size: 1rem;
     -webkit-transform: translateY(-140%);
     -moz-transform: translateY(-140%);
     -ms-transform: translateY(-140%);
@@ -6903,7 +6903,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   .select-wrapper + label {
     position: absolute;
     top: -14px;
-    font-size: 0.8rem; }
+    font-size: 1rem; }
 
 select {
   display: none; }

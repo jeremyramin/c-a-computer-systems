@@ -2,117 +2,59 @@
 layout: default
 title: Contact Us
 ---
-<div class="section">
-  <h5 class="center blue-text text-darken-3">Please complete the fields below and we will respond to your inquiry within 48 hours.</h5>
-  <h6 class="center red-text">* Indicates a required field</h6>
+<div id="form-content" class="container">
+  <div class="section">
+    <h5 class="center blue-text text-darken-3">Please complete the fields below and we will respond to your inquiry within 48 hours.</h5>
+    <h6 class="center red-text">* Indicates a required field</h6>
+  </div>
+  <div class="row">
+    <script type="text/javascript" async>var submitted=false;replaceForm = function() {$('#form-content').fadeOut('slow', function() {$('#thank-you').fadeIn('slow');});}</script>
+    <iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){$(document).ready(replaceForm());}" style="display: none;"></iframe>
+    <form action="https://docs.google.com/forms/d/1ZZ5FGOZqDKPYHD67t6zTXEGAOuHHCE75Mh-vzJVi1tY/formResponse" onsubmit="submitted=true;" target="hidden_iframe" method="POST" id="ss-form" class="col s12" autocomplete="off">
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <i class="fa prefix">&#xf007;</i>
+          <input type="text" name="entry.889825782" id="entry_889825782" required>
+          <label for="entry_889825782">* Full Name</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <i class="fa prefix">&#xf1ad;</i>
+          <input type="text" name="entry.720461694" id="entry_720461694">
+          <label for="entry_720461694">Company</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <i class="fa prefix">&#xf0e0;</i>
+          <input type="email" name="entry.545513394" id="entry_545513394" required class="validate" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+          <label for="entry_545513394">* Email</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <i class="fa prefix">&#xf095;</i>
+          <input type="tel" class="validate" name="entry.996089566" id="entry_996089566">
+          <label for="entry_996089566">Phone</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="fa prefix">&#xf040;</i>
+          <textarea name="entry.787618357" id="entry_787618357" required="" class="materialize-textarea" placeholder="Please let us know what products or services you are interested in here."></textarea>
+          <label for="entry_787618357">* Message</label>
+        </div>
+      </div>
+      <div class="row hide">
+        <div class="input-field col s12">
+          <input type="text" name="fname" id="entry_69154657" autocomplete="fname">
+          <label for="entry.69154657">First Name</label>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="input-field col s12">
+          <button class="btn-large waves-effect waves-light larger-text" type="submit" name="action">Submit<i class="fa right">&#xf1d8;</i></button>
+          <button class="btn-large waves-effect waves-light larger-text" type="reset" name="reset">Clear<i class="fa right">&#xf1f8;</i></button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
-<div class="container">
-  <form method="post" action="http://sitesupport.websitetonight.com/formmailer.aspx?projectid=1252044&amp;websiteid=13227654&amp;emailid=" name="Contact Form" id="wstForm_Contact">
-    <div class="row">
-      <div class="input-field col s6">
-        <input name="fname" type="text" class="validate" required pattern="[a-zA-z]+" autocomplete="given-name">
-        <label for="first_name">* First Name</label>
-      </div>
-
-      <div class="input-field col s6">
-        <input name="lname" type="text" class="validate" required pattern="[a-zA-z]+" autocomplete="family-name">
-        <label for="last_name">* Last Name</label>
-      </div>
-
-      <div class="input-field col s12">
-        <input name="address" type="text" class="validate" autocomplete="address-line1">
-        <label for="address1">Address Street 1</label>
-      </div>
-
-      <div class="input-field col s12">
-        <input name="address" type="text" class="validate" autocomplete="address-line2">
-        <label for="address2">Address Street 2</label>
-      </div>
-
-      <div class="input-field col s4">
-        <input name="city" type="text" class="validate" autocomplete="address-level2">
-        <label for="city">City</label>
-      </div>
-
-      <div class="input-field col s4">
-        <input name="postal" type="text" class="validate" pattern="\d{5}" autocomplete="postal-code">
-        <label for="zipcode">Zip Code</label>
-      </div>
-
-      <div class="input-field col s4">
-        <select name="state" autocomplete="address-level1">
-          <option value="AL">AL</option>
-          <option value="AK">AK</option>
-          <option value="AZ">AZ</option>
-          <option value="AR">AR</option>
-          <option value="CA">CA</option>
-          <option value="CO">CO</option>
-          <option value="CT">CT</option>
-          <option value="DE">DE</option>
-          <option value="DC">DC</option>
-          <option value="FL">FL</option>
-          <option value="GA">GA</option>
-          <option value="HI">HI</option>
-          <option value="ID">ID</option>
-          <option value="IL">IL</option>
-          <option value="IN">IN</option>
-          <option value="IA">IA</option>
-          <option value="KS">KS</option>
-          <option value="KY">KY</option>
-          <option value="LA">LA</option>
-          <option value="ME">ME</option>
-          <option value="MD">MD</option>
-          <option value="MA">MA</option>
-          <option value="MI">MI</option>
-          <option value="MN">MN</option>
-          <option value="MS">MS</option>
-          <option value="MO">MO</option>
-          <option value="MT">MT</option>
-          <option value="NE">NE</option>
-          <option value="NV">NV</option>
-          <option value="NH">NH</option>
-          <option value="NJ">NJ</option>
-          <option value="NM">NM</option>
-          <option value="NY">NY</option>
-          <option value="NC">NC</option>
-          <option value="ND">ND</option>
-          <option value="OH">OH</option>
-          <option value="OK">OK</option>
-          <option value="OR">OR</option>
-          <option value="PA">PA</option>
-          <option value="RI">RI</option>
-          <option value="SC">SC</option>
-          <option value="SD">SD</option>
-          <option value="TN">TN</option>
-          <option value="TX">TX</option>
-          <option value="UT">UT</option>
-          <option value="VT">VT</option>
-          <option value="VA">VA</option>
-          <option value="WA">WA</option>
-          <option value="WV">WV</option>
-          <option value="WI">WI</option>
-          <option value="WY">WY</option>
-        </select>
-        <label>State</label>
-      </div>
-
-      <div class="input-field col s6">
-        <input name="phone" type="tel" class="validate" autocomplete="tel">
-        <label for="phone" data-error="Invalid" data-success="Valid">Phone Number</label>
-      </div>
-
-      <div class="input-field col s6">
-        <input name="email" type="email" class="validate" required="" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="email">
-        <label for="email" data-error="Invalid" data-success="Valid">* Email</label>
-      </div>
-    </div>
-    <div class="row center">
-      <button class="btn btn-large waves-effect waves-light larger-text" type="submit" name="action" onclick="return wstxSubmitForm(this);" value="Submit" id="wstForm_Contact_Submit">
-        Submit<i class="fa fa-paper-plane right"></i>
-      </button>
-      <button class="btn btn-large waves-effect waves-light larger-text" type="reset" value="Reset" id="wstForm_Contact_Reset">
-        Reset<i class="fa fa-trash right"></i>
-      </button>
-    </div>
-  </form>
+<div id="thank-you" class="container" style="display: none;">
+  <h1 class="center green-text">Submitted Successfully</h1>
+  <h1 class="center green-text">Thank You</h1>
+  <div class="row center"><a href="/index.html" class="btn btn-large green larger-text">Return Home</a></div>
 </div>

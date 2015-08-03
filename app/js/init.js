@@ -23,7 +23,9 @@
 
     $('select').material_select();
 
-    $('.toc-wrapper').pushpin({ top: $('.toc-wrapper').offset().top });
+    if( $('.toc-wrapper').length > 0) {
+      $('.toc-wrapper').pushpin({ top: $('.toc-wrapper').offset().top });
+    }
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

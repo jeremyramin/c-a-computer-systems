@@ -38,6 +38,7 @@ header, main, footer {
   font-size: 1.2rem;
 }
 
+
 /* Icon Block */
 
 .icon-block i {
@@ -111,6 +112,6 @@ ul.side-nav:hover {
 
 /* Contact */
 
-.select-dropdown {
-  max-height: 500%;
+form .input-field:not(:last-child) {
+  margin-bottom: 1rem;
 }

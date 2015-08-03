@@ -18,19 +18,19 @@ label {
 
 // Style Placeholders
 ::-webkit-input-placeholder {
-   color: lighten($input-border-color, 20%);
+   color: lighten($input-border-color, 10%);
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: lighten($input-border-color, 20%);
+   color: lighten($input-border-color, 10%);
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: lighten($input-border-color, 20%);
+   color: lighten($input-border-color, 10%);
 }
 
 :-ms-input-placeholder {
-   color: lighten($input-border-color, 20%);
+   color: lighten($input-border-color, 10%);
 }
 
 // Text inputs
