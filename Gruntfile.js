@@ -395,18 +395,18 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('deploy', function (target) {
-    if (target === 'no-prepend') {
+    if (target === 'github') {
       grunt.task.run([
         'check',
         'test',
-        'build',
+        'build:github',
         'buildcontrol'
         ]);
     } else {
       grunt.task.run([
         'check',
         'test',
-        'build:github',
+        'build',
         'buildcontrol'
         ]);
     }
