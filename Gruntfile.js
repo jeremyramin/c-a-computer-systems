@@ -394,12 +394,23 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('deploy', [
-    'check',
-    'test',
-    'build:github',
-    'buildcontrol'
-    ]);
+  grunt.registerTask('deploy', function (target) {
+    if (target === 'no-prepend') {
+      grunt.task.run([
+        'check',
+        'test',
+        'build',
+        'buildcontrol'
+        ]);
+    } else {
+      grunt.task.run([
+        'check',
+        'test',
+        'build:github',
+        'buildcontrol'
+        ]);
+    }
+  });
 
   grunt.registerTask('default', [
     'check',

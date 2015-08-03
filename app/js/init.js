@@ -15,8 +15,6 @@
 
     $('.scrollspy').scrollSpy();
 
-    $('.toc-wrapper').pushpin({ top: $('.toc-wrapper').offset().top });
-
     $('.tooltipped').tooltip({delay: 50});
 
     $('.slider').slider({full_width: true});
@@ -24,6 +22,8 @@
     $('.collapsible').collapsible();
 
     $('select').material_select();
+
+    $('.toc-wrapper').pushpin({ top: $('.toc-wrapper').offset().top });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
