@@ -77,8 +77,12 @@ ul.side-nav:hover {
 .bold > a {
   font-weight: bold;
 }
-ul.side-nav a i {
-    font-size: 1.3em;
+
+.side-nav a i {
+  line-height: inherit;
+}
+
+.side-nav i {
     width: 2rem;
     font-size: 1.6rem;
     line-height: 3rem;
