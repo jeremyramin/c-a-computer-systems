@@ -25,12 +25,17 @@ title: Contact Us
         <div class="input-field col s12 m6">
           <i class="fa prefix">&#xf0e0;</i>
           <input type="email" name="entry.545513394" id="entry_545513394" required class="validate" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
-          <label for="entry_545513394">* Email</label>
+          <label for="entry_545513394" data-error="Invalid" data-success="Valid">* Email</label>
         </div>
         <div class="input-field col s12 m6">
           <i class="fa prefix">&#xf095;</i>
           <input type="tel" class="validate" name="entry.996089566" id="entry_996089566">
-          <label for="entry_996089566">Phone</label>
+          <label for="entry_996089566" data-error="Invalid" data-success="Valid">Phone</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="fa prefix">&#xf0ac;</i>
+          <input placeholder="http://" type="text" class="validate" name="entry.1592683469" id="entry_1592683469" pattern="(https?://)?\w+([\./?=]\w+)+/?">
+          <label for="entry_1592683469" data-error="Invalid" data-success="Valid">Website</label>
         </div>
         <div class="input-field col s12">
           <i class="fa prefix">&#xf040;</i>
@@ -48,6 +53,9 @@ title: Contact Us
         <div class="input-field col s12">
           <button class="btn-large waves-effect waves-light larger-text" type="submit" name="action">Submit<i class="fa right">&#xf1d8;</i></button>
           <button class="btn-large waves-effect waves-light larger-text" type="reset" name="reset">Clear<i class="fa right">&#xf1f8;</i></button>
+        </div>
+        <div class="col s12">
+          <p class="center red-text larger-text">No solicitation or product offers please.</p>
         </div>
       </div>
     </form>
