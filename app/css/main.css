@@ -38,6 +38,17 @@ header, main, footer {
   font-size: 1.2rem;
 }
 
+.extra-margin-top {
+  margin-top: 1em;
+  margin-top: 1rem;
+}
+
+
+/* Home Page */
+
+.side-links a {
+  display: block;
+}
 
 /* Icon Block */
 
@@ -71,9 +82,6 @@ ul.side-nav li.logo img {
 
 ul.side-nav ul.collapsible-accordion {
   background-color: #FFF;
-}
-ul.side-nav:hover {
-  overflow-y: hidden;
 }
 .bold > a {
   font-weight: bold;
