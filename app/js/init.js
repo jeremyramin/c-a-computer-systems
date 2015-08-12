@@ -27,5 +27,7 @@
       $('.toc-wrapper').pushpin({ top: $('.toc-wrapper').offset().top });
     }
 
+    $('.modal-trigger').leanModal();
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space

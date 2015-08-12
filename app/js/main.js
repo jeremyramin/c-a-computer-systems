@@ -14,4 +14,18 @@ $(document).ready(function () {
     setTimeout(function () {dom.removeClass('z-depth-5');}, 5000);
   });
 
+  var children = $('.stairs').children('a').toArray();
+  var stairs = function(children) {
+    if(children.length > 0) {
+      var currentChild = $(children.shift());
+      currentChild.addClass('z-depth-5');
+      $(currentChild).one('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {$(currentChild).removeClass('z-depth-5');});
+      setTimeout(function() {stairs(children);}, 300);
+    }
+  };
+
+  var width = $('#since').width();
+  var max_width = $('.container').width();
+  $('#since').animate({left: (max_width - width)}, 5000, function() {stairs(children);});
+
 });

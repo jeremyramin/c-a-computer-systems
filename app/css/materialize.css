@@ -2005,7 +2005,7 @@ ul {
   list-style-type: none; }
 
 a {
-  color: #039be5;
+  color: inherit;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent; }
 
