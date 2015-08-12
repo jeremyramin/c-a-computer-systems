@@ -18,14 +18,14 @@ $(document).ready(function () {
   var stairs = function(children) {
     if(children.length > 0) {
       var currentChild = $(children.shift());
-      currentChild.addClass('z-depth-5');
-      $(currentChild).one('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {$(currentChild).removeClass('z-depth-5');});
-      setTimeout(function() {stairs(children);}, 300);
+      currentChild.addClass('z-depth-3');
+      $(currentChild).one('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function() {$(currentChild).removeClass('z-depth-3');});
+      setTimeout(function() {stairs(children);}, 250);
     }
   };
 
   var width = $('#since').width();
-  var max_width = $('.container').width();
-  $('#since').animate({left: (max_width - width)}, 5000, function() {stairs(children);});
+  var max_width = $('.slider').width();
+  setTimeout(function() {$('#since').animate({left: Math.max((max_width - width), 0)}, 2000, function() {stairs(children);});}, 1000);
 
 });
