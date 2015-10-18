@@ -14,6 +14,13 @@ $(document).ready(function () {
     setTimeout(function () {dom.removeClass('z-depth-5');}, 5000);
   });
 
+  var side_links = $('.side-links').children();
+  var divider =
+  side_links.each(function() {
+    $(this).before($('<div class=divider></div>'));
+  });
+  side_links.last().after($('<div class=divider></div>'));
+
   var children = $('.stairs').children('a').toArray();
   var stairs = function(children) {
     if(children.length > 0) {
